@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { loadCrypto } from './redux/reducers/cryptoReducers';
+import Links from './components/Links';
+import RoutesAndElements from './components/Routes';
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(loadCrypto());
+    // eslint-disable-next-line
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router basename="/">
+        <Switch>
+          <Route exact path="/">
+            <Links />
+          </Route>
+          <RoutesAndElements />
+        </Switch>
+      </Router>
     </div>
   );
 }
