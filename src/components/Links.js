@@ -21,7 +21,7 @@ const Links = () => {
     }
     i += 1;
     return (
-      <Link key={elem.id} to={elem.id} className={`col-6 home-links ${bgColor}`}>
+      <Link key={elem.id} to={elem.id} className={`text-decoration-none col-6 home-links ${bgColor}`}>
         <Logos name={elem.name} logoUrl={elem.logo_url} rank={elem.rank} />
       </Link>
     );

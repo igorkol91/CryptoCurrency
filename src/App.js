@@ -18,7 +18,7 @@ function App() {
   // };
 
   return (
-    <div>
+    <div className="container-sm">
       <Router basename="/">
         <Switch>
           <Route exact path="/">
