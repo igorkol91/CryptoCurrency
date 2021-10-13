@@ -2,7 +2,7 @@ import React from 'react';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import { useHistory } from 'react-router';
 
-const Header = () => {
+const BackButton = () => {
   const history = useHistory();
 
   const handleClick = () => {
@@ -28,4 +28,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default BackButton;

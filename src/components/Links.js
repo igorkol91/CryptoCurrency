@@ -5,11 +5,27 @@ import Logos from './Logos';
 
 const Links = () => {
   const state = useSelector((state) => state);
-  const List = (state.value).map((elem) => (
-    <Link key={elem.id} to={elem.id} className="col-6 home-links dark-blue">
-      <Logos name={elem.name} logoUrl={elem.logo_url} />
-    </Link>
-  ));
+  let i = 1;
+  let colorBool = true;
+  let bgColor = 'light-blue';
+  const List = (state.value).map((elem) => {
+    if (i === 2) {
+      colorBool = !colorBool;
+      if (colorBool) {
+        bgColor = 'light-blue';
+        i = 0;
+      } else {
+        bgColor = 'dark-blue';
+        i = 0;
+      }
+    }
+    i += 1;
+    return (
+      <Link key={elem.id} to={elem.id} className={`col-6 home-links ${bgColor}`}>
+        <Logos name={elem.name} logoUrl={elem.logo_url} rank={elem.rank} />
+      </Link>
+    );
+  });
 
   return (
     <div className="row">

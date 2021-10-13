@@ -13,6 +13,10 @@ function App() {
     dispatch(loadCrypto());
   }, []);
 
+  // const filterState = (state) => {
+
+  // };
+
   return (
     <div>
       <Router basename="/">

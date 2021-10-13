@@ -1,12 +1,12 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
-import Header from './BackButton';
+import BackButton from './BackButton';
 
 const InsideInfo = ({
   supply, logoUrl, price, rank, status, name,
 }) => (
   <div className="dark-blue d-flex flex-column align-items-center">
-    <Header />
+    <BackButton />
     <img src={logoUrl} alt="img" className="h-25 w-25 d-block my-2" />
     <span className="d-flex">
       <h2 className="text-white">Rank:</h2>
