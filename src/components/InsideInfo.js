@@ -33,12 +33,12 @@ const InsideInfo = ({
       <h4 className="text-white">$</h4>
     </span>
     <span className="d-flex">
-      <h5 className="text-white">Circulating Supply: </h5>
+      <h5 className="text-white">Circulating Supply:</h5>
       {' '}
       <h5 className="text-white">{supply}</h5>
     </span>
     <div className="text-white">
-      Status
+      Status:
       {' '}
       <b>
         {status}
