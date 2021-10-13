@@ -11,7 +11,6 @@ function App() {
 
   useEffect(() => {
     dispatch(loadCrypto());
-    // eslint-disable-next-line
   }, []);
 
   return (

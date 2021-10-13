@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home-links {
+  display: block;
+  height: 20vh;
+}
+
+.home-links-img {
+  justify-self: center;
+  height: 10%;
+  width: 10%;
+}
+
+.home-links-text {
+  color: white;
+  text-decoration: none;
+}
+
+.light-blue {
+  background-color: #6c94b4;
+}
+
+.dark-blue {
+  background-color: #446bb3;
+}
+
+.main-img {
+  color: rgba(255, 255, 255, 0);
+}
