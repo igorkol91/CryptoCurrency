@@ -13,6 +13,7 @@
   justify-self: center;
   height: 10%;
   width: 10%;
+  max-width: 100px !important;
 }
 
 .home-links-text {
