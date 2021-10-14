@@ -7,8 +7,9 @@ const InsideInfo = ({
 }) => (
   <div className="dark-blue d-flex flex-column align-items-center">
     <BackButton />
-    <img src={logoUrl} alt="img" className="h-25 w-25 d-block my-2" />
-    <span className="d-flex">
+    <img src={logoUrl} alt="img" className="h-25 w-25 d-block my-2 px-3" />
+    <h1 className="text-white">{name}</h1>
+    <span className="d-flex justify-content-between w-100 px-3">
       <h2 className="text-white">Rank:</h2>
       {' '}
       <h2 className="text-white">
@@ -19,8 +20,7 @@ const InsideInfo = ({
         {' '}
       </h2>
     </span>
-    <h1 className="text-white">{name}</h1>
-    <span className="d-flex">
+    <span className="d-flex justify-content-between w-100 px-3">
       <h4 className="text-white">Price: </h4>
       {' '}
       <h4 className="text-white">
@@ -30,14 +30,13 @@ const InsideInfo = ({
         </b>
         {' '}
       </h4>
-      <h4 className="text-white">$</h4>
     </span>
-    <span className="d-flex">
+    <span className="d-flex justify-content-between w-100 px-3">
       <h5 className="text-white">Circulating Supply:</h5>
       {' '}
       <h5 className="text-white">{supply}</h5>
     </span>
-    <div className="text-white">
+    <div className="text-white d-flex justify-content-between w-100 px-3">
       Status:
       {' '}
       <b>
