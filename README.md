@@ -29,6 +29,10 @@ npm install
 npm start
 ```
 
+### PRESENTATION VIDEO
+
+[Link](https://www.loom.com/share/aca5d00b385c45b79638a792c01e0650)
+
 Author
 
 👤 **Igor Koloski**  
