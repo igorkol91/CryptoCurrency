@@ -5,8 +5,7 @@ const loadCrypto = createAsyncThunk('fetchData',
   async () => {
     const result = await fetch('https://api.coinlore.net/api/tickers/', { method: 'GET' });
     const res = await result.json();
-    console.log('asdasdasdas');
-    return res;
+    return res.data;
   });
 
 const crypto = createSlice({

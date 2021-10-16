@@ -4,17 +4,17 @@ import { useSelector } from 'react-redux';
 import InsideInfo from './InsideInfo';
 
 const RoutesAndElements = () => {
-  const state = useSelector((state) => state);
+  const state = useSelector((state) => state.value);
 
   const StateList = (state).map((elem) => (
     <Route key={elem.id} path={`/${elem.id}`}>
       <InsideInfo
         name={elem.name}
-        supply={elem.circulating_supply}
-        logoUrl={elem.logo_url}
-        price={elem.price}
+        symbol={elem.symbol}
+        price={elem.price_usd}
+        priceBtc={elem.price_btc}
         rank={elem.rank}
-        status={elem.status}
+        change24={elem.percent_change_24h}
       />
     </Route>
   ));

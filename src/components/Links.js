@@ -1,15 +1,19 @@
 import { Link } from 'react-router-dom';
-import React, { useState } from 'react';
-import { useSelector } from 'react-redux';
+import React, { useState, useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import Logos from './Logos';
+import { loadCrypto } from '../redux/reducers/cryptoReducers';
 
 const Links = () => {
-  const state = useSelector((state) => state);
+  const state = useSelector((state) => state.value);
+  const dispatch = useDispatch();
   const [filter, setFilter] = useState('');
+  useEffect(() => {
+    dispatch(loadCrypto());
+  }, []);
   let i = 1;
   let colorBool = true;
   let bgColor = 'light-blue';
-  console.log(state);
   const List = ((state).filter((elem) => {
     if (filter === '') {
       return elem;
@@ -33,7 +37,7 @@ const Links = () => {
 
     return (
       <Link key={elem.id} to={elem.id} className={`text-decoration-none col-6 home-links ${bgColor}`}>
-        <Logos name={elem.name} logoUrl={elem.logo_url} rank={elem.rank} />
+        <Logos name={elem.name} rank={elem.rank} />
       </Link>
     );
   });
