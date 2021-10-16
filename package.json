@@ -1,5 +1,6 @@
 {
   "name": "cryptocurrency",
+  "homepage": "https://igorkol91.github.io/CryptoCurrency/",
   "version": "0.1.0",
   "dependencies": {
     "@material-ui/core": "^4.12.3",
