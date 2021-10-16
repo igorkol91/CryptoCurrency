@@ -9,8 +9,8 @@ const Links = () => {
   let i = 1;
   let colorBool = true;
   let bgColor = 'light-blue';
-
-  const List = ((state.value).filter((elem) => {
+  console.log(state);
+  const List = ((state).filter((elem) => {
     if (filter === '') {
       return elem;
     }

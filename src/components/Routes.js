@@ -6,7 +6,7 @@ import InsideInfo from './InsideInfo';
 const RoutesAndElements = () => {
   const state = useSelector((state) => state);
 
-  const StateList = (state.value).map((elem) => (
+  const StateList = (state).map((elem) => (
     <Route key={elem.id} path={`/${elem.id}`}>
       <InsideInfo
         name={elem.name}

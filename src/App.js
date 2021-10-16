@@ -15,7 +15,7 @@ const App = () => {
 
   return (
     <div className="container-sm">
-      <Router basename="https://igorkol91.github.io/CryptoCurrency/">
+      <Router basename="/">
         <Switch>
           <Route exact path="/">
             <Links />
