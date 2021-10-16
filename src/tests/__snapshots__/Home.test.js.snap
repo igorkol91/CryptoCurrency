@@ -4,31 +4,10 @@ exports[`Home component Snapshot test 1`] = `
 <div
   className="dark-blue d-flex flex-column align-items-center"
 >
-  <div
-    className="header-button align-self-start m-3"
-  >
-    <div
-      className="back-btn"
-      onClick={[Function]}
-      onKeyPress={[Function]}
-      role="button"
-      tabIndex="0"
-    >
-      <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root"
-        focusable="false"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M11.67 3.87L9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"
-        />
-      </svg>
-    </div>
-  </div>
   <img
     alt="img"
     className="h-25 w-25 d-block my-2 px-3"
+    src="image.png"
   />
   <h1
     className="text-white"
@@ -75,7 +54,7 @@ exports[`Home component Snapshot test 1`] = `
     <h5
       className="text-white"
     >
-      Circulating Supply:
+      Price in BTC:
     </h5>
      
     <h5
@@ -85,100 +64,23 @@ exports[`Home component Snapshot test 1`] = `
   <div
     className="text-white d-flex justify-content-between w-100 px-3"
   >
-    Status:
+    Change in 24 hours:
      
     <b />
      
   </div>
-</div>
-`;
-
-exports[`Navbar component Snapshot test 1`] = `
-<div
-  className="dark-blue d-flex flex-column align-items-center"
->
-  <div
-    className="header-button align-self-start m-3"
-  >
-    <div
-      className="back-btn"
-      onClick={[Function]}
-      onKeyPress={[Function]}
-      role="button"
-      tabIndex="0"
-    >
-      <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root"
-        focusable="false"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M11.67 3.87L9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"
-        />
-      </svg>
-    </div>
-  </div>
-  <img
-    alt="img"
-    className="h-25 w-25 d-block my-2 px-3"
-  />
-  <h1
-    className="text-white"
-  />
-  <span
-    className="d-flex justify-content-between w-100 px-3"
-  >
-    <h2
-      className="text-white"
-    >
-      Rank:
-    </h2>
-     
-    <h2
-      className="text-white"
-    >
-      <b>
-         
-      </b>
-       
-    </h2>
-  </span>
-  <span
-    className="d-flex justify-content-between w-100 px-3"
-  >
-    <h4
-      className="text-white"
-    >
-      Price: 
-    </h4>
-     
-    <h4
-      className="text-white"
-    >
-      <b>
-         
-      </b>
-       
-    </h4>
-  </span>
-  <span
-    className="d-flex justify-content-between w-100 px-3"
-  >
-    <h5
-      className="text-white"
-    >
-      Circulating Supply:
-    </h5>
-     
-    <h5
-      className="text-white"
-    />
-  </span>
   <div
     className="text-white d-flex justify-content-between w-100 px-3"
   >
-    Status:
+    Symbol:
+     
+    <b />
+     
+  </div>
+  <div
+    className="text-white d-flex justify-content-between w-100 px-3"
+  >
+    Change in 24 hours:
      
     <b />
      

@@ -2,12 +2,14 @@ import { Route } from 'react-router-dom';
 import React from 'react';
 import { useSelector } from 'react-redux';
 import InsideInfo from './InsideInfo';
+import Header from './header';
 
 const RoutesAndElements = () => {
   const state = useSelector((state) => state.value);
 
   const StateList = (state).map((elem) => (
     <Route key={elem.id} path={`/${elem.id}`}>
+      <Header />
       <InsideInfo
         name={elem.name}
         symbol={elem.symbol}

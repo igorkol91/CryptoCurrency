@@ -1,6 +1,5 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
-import BackButton from './BackButton';
 import image from '../image.png';
 
 const InsideInfo = ({
@@ -8,7 +7,6 @@ const InsideInfo = ({
 }) => (
 
   <div className="dark-blue d-flex flex-column align-items-center">
-    <BackButton />
     <img src={image} alt="img" className="h-25 w-25 d-block my-2 px-3" />
     <h1 className="text-white">{name}</h1>
     <span className="d-flex justify-content-between w-100 px-3">

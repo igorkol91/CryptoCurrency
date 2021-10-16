@@ -5,6 +5,7 @@ import { useDispatch } from 'react-redux';
 import { loadCrypto } from './redux/reducers/cryptoReducers';
 import Links from './components/Links';
 import RoutesAndElements from './components/Routes';
+import Header from './components/header';
 
 const App = () => {
   const dispatch = useDispatch();
@@ -18,6 +19,7 @@ const App = () => {
       <Router basename="/">
         <Switch>
           <Route exact path="/">
+            <Header />
             <Links />
           </Route>
           <RoutesAndElements />

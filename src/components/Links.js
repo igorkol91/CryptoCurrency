@@ -44,12 +44,12 @@ const Links = () => {
 
   return (
     <div className="row">
-      <div className="col-6 home-links dark-blue d-flex justify-content-center align-items-center">
+      <div className="col-12 py-2 dark-blue d-flex justify-content-center align-items-center">
         <h3 className="home-links-text">TOP 100 Crypto Currencies</h3>
       </div>
-      <div className="col-6 home-links light-blue d-flex flex-column justify-content-center">
+      <div className="col-12 py-2 light-blue d-flex flex-column justify-content-center">
         <h3 className="text-white">Search by name</h3>
-        <input type="text" placeholder="Search..." onChange={(event) => { setFilter(event.target.value); }} />
+        <input className="w-50" type="text" placeholder="Search..." onChange={(event) => { setFilter(event.target.value); }} />
       </div>
       {List}
     </div>

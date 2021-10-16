@@ -4,10 +4,6 @@ exports[`Logos component Snapshot test 1`] = `
 <div
   className="link-div d-flex align-items-center h-100"
 >
-  <img
-    alt="img"
-    className="home-links-img h-50 w-50"
-  />
   <div
     className="mx-1"
   >
@@ -19,99 +15,6 @@ exports[`Logos component Snapshot test 1`] = `
     >
       Rank:
     </h6>
-  </div>
-</div>
-`;
-
-exports[`Navbar component Snapshot test 1`] = `
-<div
-  className="dark-blue d-flex flex-column align-items-center"
->
-  <div
-    className="header-button align-self-start m-3"
-  >
-    <div
-      className="back-btn"
-      onClick={[Function]}
-      onKeyPress={[Function]}
-      role="button"
-      tabIndex="0"
-    >
-      <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root"
-        focusable="false"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M11.67 3.87L9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"
-        />
-      </svg>
-    </div>
-  </div>
-  <img
-    alt="img"
-    className="h-25 w-25 d-block my-2 px-3"
-  />
-  <h1
-    className="text-white"
-  />
-  <span
-    className="d-flex justify-content-between w-100 px-3"
-  >
-    <h2
-      className="text-white"
-    >
-      Rank:
-    </h2>
-     
-    <h2
-      className="text-white"
-    >
-      <b>
-         
-      </b>
-       
-    </h2>
-  </span>
-  <span
-    className="d-flex justify-content-between w-100 px-3"
-  >
-    <h4
-      className="text-white"
-    >
-      Price: 
-    </h4>
-     
-    <h4
-      className="text-white"
-    >
-      <b>
-         
-      </b>
-       
-    </h4>
-  </span>
-  <span
-    className="d-flex justify-content-between w-100 px-3"
-  >
-    <h5
-      className="text-white"
-    >
-      Circulating Supply:
-    </h5>
-     
-    <h5
-      className="text-white"
-    />
-  </span>
-  <div
-    className="text-white d-flex justify-content-between w-100 px-3"
-  >
-    Status:
-     
-    <b />
-     
   </div>
 </div>
 `;
