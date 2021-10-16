@@ -6,7 +6,7 @@ import { loadCrypto } from './redux/reducers/cryptoReducers';
 import Links from './components/Links';
 import RoutesAndElements from './components/Routes';
 
-function App() {
+const App = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -25,6 +25,6 @@ function App() {
       </Router>
     </div>
   );
-}
+};
 
 export default App;
