@@ -17,7 +17,7 @@ The web provides the user with daily information about latest CryptoCurrency cha
 Clone the project:
 
 ```
-git clone https://github.com/blakbox23/Space-travellers-react-redux
+git clone https://github.com/igorkol91/CryptoCurrency
 ```
 
 ### Run project
