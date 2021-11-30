@@ -25,8 +25,10 @@ git clone https://github.com/igorkol91/CryptoCurrency
 Install dependencies:
 
 ```
+
 npm install
 npm start
+
 ```
 
 ### LIVE LINK
