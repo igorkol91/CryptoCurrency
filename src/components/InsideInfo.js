@@ -3,7 +3,7 @@ import { PropTypes } from 'prop-types';
 import image from '../image.png';
 
 const InsideInfo = ({
-  name, price, symbol, priceBtc, rank, change24,
+  name, price, symbol, priceBtc, rank, change24, supply,
 }) => (
   <div className="dark-blue flex-column align-items-center row">
     <img src={image} alt="img" className="h-25 w-25 d-block my-2 px-3" />
@@ -40,6 +40,7 @@ const InsideInfo = ({
       {' '}
       <b>
         {change24}
+        %
       </b>
       {' '}
     </div>
@@ -54,10 +55,10 @@ const InsideInfo = ({
     </div>
 
     <div className="text-white d-flex justify-content-between w-100 px-3">
-      Change in 24 hours:
+      Current supply:
       {' '}
       <b>
-        {change24}
+        {supply}
       </b>
       {' '}
     </div>
@@ -71,6 +72,7 @@ InsideInfo.propTypes = {
   rank: PropTypes.number.isRequired,
   symbol: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
+  supply: PropTypes.string.isRequired,
 };
 
 export default InsideInfo;

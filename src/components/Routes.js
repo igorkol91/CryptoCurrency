@@ -6,7 +6,7 @@ import Header from './header';
 
 const RoutesAndElements = () => {
   const state = useSelector((state) => state.value);
-
+  console.log(state);
   const StateList = (state).map((elem) => (
     <Route key={elem.id} path={`/${elem.id}`}>
       <Header />
@@ -17,6 +17,7 @@ const RoutesAndElements = () => {
         priceBtc={elem.price_btc}
         rank={elem.rank}
         change24={elem.percent_change_24h}
+        supply={elem.tsupply}
       />
     </Route>
   ));
