@@ -3,9 +3,14 @@ import { combineReducers } from 'redux';
 
 const loadCrypto = createAsyncThunk('fetchData',
   async () => {
-    const result = await fetch('https://api.coinlore.net/api/tickers/', { method: 'GET' });
-    const res = await result.json();
-    return res.data;
+    try {
+      const result = await fetch('https://api.coinlore.net/api/tickers/', { method: 'GET' });
+      const res = await result.json();
+      return res.data;
+    } catch (e) {
+      console.log(e);
+      return null;
+    }
   });
 
 const crypto = createSlice({

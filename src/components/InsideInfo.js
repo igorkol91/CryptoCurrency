@@ -5,8 +5,7 @@ import image from '../image.png';
 const InsideInfo = ({
   name, price, symbol, priceBtc, rank, change24,
 }) => (
-
-  <div className="dark-blue d-flex flex-column align-items-center">
+  <div className="dark-blue flex-column align-items-center row">
     <img src={image} alt="img" className="h-25 w-25 d-block my-2 px-3" />
     <h1 className="text-white">{name}</h1>
     <span className="d-flex justify-content-between w-100 px-3">
